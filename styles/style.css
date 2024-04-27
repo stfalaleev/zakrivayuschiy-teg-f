@@ -176,7 +176,6 @@
   position: absolute;
   animation: arrow 0.5s ease-in-out infinite alternate;
   inset-inline-start: -20px;
-  /* Safari fix */
   inset-block-start: 0px;
 }
 
@@ -212,7 +211,6 @@
 
 .card__img-wrapper {
   position: relative;
-  /* overflow - для коррекции эффектов filter blur */
   overflow: hidden;
 }
 
@@ -343,7 +341,6 @@
   inline-size: 39px;
 }
 
-/* 376 взято так как в фигме на 375 уже стоят определенные стили, а при использовании width <= 375px 375 все еще включает в себя стили для значений больше 375 ???? */
 @media (width < 376px) {
   .modal {
     padding: 28px 34px 28px 40px;
