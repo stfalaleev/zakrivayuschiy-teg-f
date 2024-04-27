@@ -1,1 +1,4 @@
-В этой папке будут храниться все необходимые SVG-файлы для сайта.
+# zakrivayuschiy-teg-f
+
+Ссылки:
+- Репозиторий проекта: https://github.com/stfalaleev/zakrivayuschiy-teg-f
