@@ -45,7 +45,7 @@
 .page {
   padding-block-start: 100px;
   color: var(--text-color, #000000);
-  font-family: var(--page-main-font-family, "Inter", sans-serif);
+  font-family: var(--page-main-font-family, "Inter"), sans-serif;
   background-color: var(--page-background-color, #ffffff);
   background-image: var(--page-background-image, none);
   background-size: cover;
