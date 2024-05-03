@@ -72,7 +72,6 @@
 
 .modal[open] {
   display: grid;
-  /* Safari fix */
   grid-template-rows: repeat(2, min-content);
   gap: 30px;
 }
@@ -186,7 +185,7 @@
   padding-block-end: 105px;
 }
 
-.cards-list {
+.cards-list_item {
   display: grid;
   gap: 52px;
 }
@@ -217,20 +216,15 @@
 .card__img-label {
   position: absolute;
   z-index: 1;
-
   opacity: 0.5;
-
   color: var(--text-color, #000000);
   font-family: var(--page-accent-font-family, "PressStart2P", fantasy);
-
   font-size: 14px;
   line-height: normal;
-
   text-transform: uppercase;
   text-shadow: 0 0 1px var(--page-background-color, #ffffff);
   inset-inline-end: 13px;
   inset-block-start: 24px;
-
   mix-blend-mode: hard-light;
 }
 
@@ -280,6 +274,7 @@
 .button {
   position: relative;
   z-index: 1;
+  min-inline-size: 30%;
   border: 2px solid var(--text-color, #000000);
   padding: 10px 36px;
   font-family: var(--page-accent-font-family, "PressStart2P", fantasy);
@@ -322,7 +317,7 @@
   justify-content: center;
   align-items: center;
   gap: 10px;
-  padding: 15px 20px;
+  padding: 16px 20px;
 }
 
 .button__text,
