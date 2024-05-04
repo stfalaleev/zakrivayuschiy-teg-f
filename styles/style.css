@@ -63,7 +63,7 @@
   border: 2px solid var(--text-color, #000000);
   padding: 25px 30px;
   color: var(--text-color, #000000);
-  font-family: var(--page-accent-font-family, "PressStart2P", fantasy);
+  font-family: var(--page-accent-font-family, "PressStart2P"), fantasy;;
   line-height: 1.5;
   text-transform: uppercase;
   background: var(--page-background-color, #ffffff);
@@ -141,6 +141,8 @@
 }
 
 .theme-menu__button:not(:disabled)::after {
+  position: absolute;
+  display: block;
   content: "";
   background: currentColor;
   transition: transform 0.3s ease;
@@ -182,11 +184,6 @@
   justify-items: center;
   gap: 57px;
   padding-block-end: 105px;
-}
-
-.cards-list_item {
-  display: grid;
-  gap: 52px;
 }
 
 .card {
@@ -271,9 +268,9 @@
 }
 
 .button {
+  display: block;
   position: relative;
   z-index: 1;
-  min-inline-size: 30%;
   border: 2px solid var(--text-color, #000000);
   padding: 10px 36px;
   font-family: var(--page-accent-font-family, "PressStart2P", fantasy);
@@ -348,6 +345,12 @@
   .button__icon {
     block-size: 28px;
     inline-size: 28px;
+  }
+}
+
+@media (width >=1024px) {
+  .button {
+    min-inline-size: 35%;
   }
 }
 
