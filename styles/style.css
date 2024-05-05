@@ -63,7 +63,7 @@
   border: 2px solid var(--text-color, #000000);
   padding: 25px 30px;
   color: var(--text-color, #000000);
-  font-family: var(--page-accent-font-family, "PressStart2P"), fantasy;;
+  font-family: var(--page-accent-font-family, "PressStart2P"), fantasy;
   line-height: 1.5;
   text-transform: uppercase;
   background: var(--page-background-color, #ffffff);
@@ -98,6 +98,7 @@
 }
 
 .page-title {
+  text-align: center;
   font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
 }
 
@@ -112,10 +113,12 @@
 
 .header__title {
   margin-block-start: clamp(7.5rem, 7.1479rem + 1.5023vw, 8.5rem);
-  margin-block-end: 20px;
+  margin-block-end: 25px;
 }
 
 .header__subtitle {
+  display: block;
+  margin-top: -10px;
   font-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
 }
 
@@ -214,7 +217,7 @@
   z-index: 1;
   opacity: 0.5;
   color: var(--text-color, #000000);
-  font-family: var(--page-accent-font-family, "PressStart2P", fantasy);
+  font-family: var(--page-accent-font-family, "PressStart2P"), fantasy;
   font-size: 14px;
   line-height: normal;
   text-transform: uppercase;
@@ -268,19 +271,22 @@
 }
 
 .button {
-  display: block;
   position: relative;
   z-index: 1;
   border: 2px solid var(--text-color, #000000);
-  padding: 10px 36px;
-  font-family: var(--page-accent-font-family, "PressStart2P", fantasy);
+  padding: 0;
+  padding-block: 12px;
+  min-width: 130px;
+  font-family: var(--page-accent-font-family, "PressStart2P"), fantasy;
   font-size: 14px;
   text-transform: inherit;
   background: var(--page-background-color, #ffffff);
   transition: box-shadow 0.3s ease;
   cursor: pointer;
   appearance: none;
+  line-height: 0.9;
 }
+
 
 .button:focus {
   outline: none;
@@ -312,8 +318,9 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 10px;
-  padding: 16px 20px;
+  gap: 8px;
+  padding-block: 15px;
+  padding-inline: 19px 21px;
 }
 
 .button__text,
@@ -345,12 +352,6 @@
   .button__icon {
     block-size: 28px;
     inline-size: 28px;
-  }
-}
-
-@media (width >=1024px) {
-  .button {
-    min-inline-size: 35%;
   }
 }
 
