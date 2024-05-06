@@ -120,12 +120,10 @@
 
 .header__title {
   margin-block-start: clamp(7.5rem, 7.1479rem + 1.5023vw, 8.5rem);
-  margin-block-end: 25px;
+  margin-block-end: 20px;
 }
 
 .header__subtitle {
-  display: block;
-  margin-top: -8px;
   font-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
 }
 
@@ -135,7 +133,7 @@
 
 .theme-menu__list {
   display: grid;
-  gap: 8px;
+  gap: 14px;
   padding-inline-start: 20px;
 }
 
@@ -192,7 +190,7 @@
 .main {
   display: grid;
   justify-items: center;
-  gap: 56px;
+  gap: 50px;
   padding-block-end: 105px;
 }
 
